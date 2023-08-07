@@ -57,7 +57,7 @@ class PaketController extends Controller
             'status' => 'Nonaktif',
         ]);
 
-        return redirect()->route('Paket.index')->with('success', 'Data Paket berhasil dinonaktifkan.');
+        return redirect()->route('paket.index')->with('success', 'Data Paket berhasil dinonaktifkan.');
     }
 
     public function aktif($id)
@@ -68,6 +68,6 @@ class PaketController extends Controller
             'status' => 'Aktif',
         ]);
 
-        return redirect()->route('Paket.index')->with('success', 'Data Paket berhasil diaktifkan.');
+        return redirect()->route('paket.index')->with('success', 'Data Paket berhasil diaktifkan.');
     }
 }
